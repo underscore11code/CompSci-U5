@@ -33,7 +33,7 @@ public class MadLib {
     for (final String prompt : prompts) {
       responses.add(
               prompt(
-                      "Please enter a " + (prompt.replace("{", "").replace("}", "")),
+                      "Please enter a " + (prompt.replace("{", "").replace("}", "") + ":"),
                       p -> !p.equals(""))
       );
     }

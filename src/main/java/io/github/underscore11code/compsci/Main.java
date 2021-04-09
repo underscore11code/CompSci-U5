@@ -41,11 +41,11 @@ public class Main {
   }
 
   public static String prompt(final String prompt, final Predicate<String> condition) {
-    System.out.print(prompt);
+    System.out.print(prompt + " ");
     while (true) {
       final String in = scanner.nextLine();
       if (condition.test(in)) return in;
-      System.out.print("Invalid input. " + prompt);
+      System.out.print("Invalid input. " + prompt + " ");
     }
   }
 }
