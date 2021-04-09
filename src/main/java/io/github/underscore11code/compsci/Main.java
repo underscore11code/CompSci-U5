@@ -20,6 +20,7 @@ public class Main {
     boolean again = false;
     do {
       madLib().run();
+      System.out.println("\n\n");
       final String response = prompt("Do you wish to go again? (y/n)",
               r -> r.equalsIgnoreCase("y") || r.equalsIgnoreCase("n"));
       if (response.equalsIgnoreCase("y")) again = true;
